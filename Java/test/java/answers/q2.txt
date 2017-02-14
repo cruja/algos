@@ -1,0 +1,14 @@
+initcap(' UNITED states Of AmERIca ')  
+RESULT: "United States Of America"
+
+"initcap('UNITED   states      Of      amERIca')"
+RESULT: "United States Of America"
+
+select initcap('');
+RESULT:""
+
+select initcap('    ');
+RESULT:""
+
+"initcap(' a aa BBB c c')"
+RESULT:"A Aa Bbb C C"

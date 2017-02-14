@@ -1,0 +1,1 @@
+SELECT V.*, @rownum := @rownum + 1 AS rank FROM votes V, (SELECT @rownum := 0) r order by V.votes DESC;
